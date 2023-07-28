@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "QA Extension",
+    "version": "1.0.0",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/search16.png",
+            "32": "icons/search32.png",
+            "48": "icons/search48.png",
+            "128": "icons/search128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "src/content-script.tsx"
+            ],
+            "matches": [
+                "https://*/*",
+                "http://*/*"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "src/service-worker.ts",
+        "type": "module"
+    },
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "storage"
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    }
+}

@@ -1,0 +1,13 @@
+.select-container {
+    & label {
+        display: inline-block;
+        margin-bottom: 2px;
+        font-weight: 600;
+        letter-spacing: .5px;
+    }
+
+    & select {
+        padding: 2px 4px;
+        /* border-radius: 2px; */
+    }
+}
