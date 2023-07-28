@@ -1,7 +1,9 @@
 # QA Extension
 
 Make your research easier with QA Extension's intuitive webpage summarization and question-answer feature!
+
 QA (Question-Answering) browser extension  leverages the OpenAI API to summarize the current active webpage, and provides a chatbot feature for interactive Q&A using the webpage contents as context.
+
 This extension aims to enhance the user's browsing experience by quickly summarizing the content of the page and allowing them to engage in real-time conversations with a chatbot.
 
 ## Features
